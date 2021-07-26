@@ -1,7 +1,10 @@
+import React from "react";
+import FrontPage from "./pages/FrontPage";
+
 const App = () => {
   return (
     <div className="app">
-      App
+      <FrontPage />
     </div>
   );
 }

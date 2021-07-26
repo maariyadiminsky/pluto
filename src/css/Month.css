@@ -1,0 +1,9 @@
+.months {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 3em;
+}
+
+button.month {
+    padding: 70px;
+}
