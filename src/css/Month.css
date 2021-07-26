@@ -1,7 +1,12 @@
 .months {
-    max-width: 700px;
+    max-width: 550px;
     margin: auto;
-    margin-top: 3em;
+    padding-top: 3em;
+}
+
+.months h1 {
+    padding-bottom: 25px;
+    text-align: center;
 }
 
 button.month {

@@ -16,7 +16,7 @@ const renderMonths = (handleChooseMonth) => (
 const Month = ({ handleChooseMonth }) => {
     return (
         <div className="months">
-            <h1 className="ui header center aligned">What month were you born?</h1>
+            <h1>What month were you born?</h1>
             <div className="ui four column center aligned grid months">
                 {renderMonths(handleChooseMonth)}
             </div>
