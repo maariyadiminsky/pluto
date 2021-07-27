@@ -10,7 +10,8 @@ export const getAttitudeNumber = (month, day) => {
     return getNumerologySingleNumber(result);
 }
 
-export const getDayNumber = (day) => getNumerologySingleNumber(day);
+const getDayNumber = (day) => getNumerologySingleNumber(day);
+export const getDayNumberFull = (day) => day;
 
 const getMonthNumber = (month) => getNumerologySingleNumber(month);
 
