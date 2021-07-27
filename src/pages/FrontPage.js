@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import DisplayDiv from "../components/DisplayDiv";
+import Year from "../components/Year";
 
 import "../css/FrontPage.css";
 
@@ -15,6 +16,7 @@ class FrontPage extends Component {
 
         shouldMonthSelectionHide: false,
         shouldDaySelectionHide: false,
+        shouldYearSelectionHide: false,
 
         shouldShowMonthSelection: true,
         shouldShowDaySelection: false,
@@ -36,7 +38,7 @@ class FrontPage extends Component {
                 shouldShowMonthSelection: false,
                 shouldShowDaySelection: true
             });
-        }, 2000);
+        }, 1500);
     }
 
     handleChooseDay = (day) => {
@@ -50,7 +52,20 @@ class FrontPage extends Component {
                 shouldShowDaySelection: false,
                 shouldShowYearSelection: true
             });
-        }, 2000);
+        }, 1500);
+    }
+
+    handleChooseYear = (year) => {
+        this.setState({ 
+            year: parseInt(year), 
+            shouldYearSelectionHide: true,
+        });
+
+        setTimeout(() => {
+            this.setState({ 
+                shouldShowYearSelection: false
+            });
+        }, 1500);
     }
 
     renderItems = () => {
@@ -75,6 +90,13 @@ class FrontPage extends Component {
                 buttonSize="medium"
                 question="Thanks! Which day?"
             />
+            )
+        } else if (this.state.shouldShowYearSelection) {
+            return (
+                <Year 
+                    handleChooseYear={this.handleChooseYear}  
+                    shouldYearSelectionHide={this.state.shouldYearSelectionHide}
+                />
             )
         }
     }

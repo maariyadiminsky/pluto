@@ -1,0 +1,34 @@
+.year {
+    padding-top: 15%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.year input {
+    margin: auto;
+    text-align: center;
+}
+
+.year h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 5px
+}
+
+.disappear-animation {
+    animation-name: disappear;
+    animation-duration: 1.25s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes disappear{
+    0%{
+      opacity: 1;
+    }
+    
+    100%{
+      display: none;
+      opacity: 0;
+    }
+}

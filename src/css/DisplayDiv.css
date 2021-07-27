@@ -6,7 +6,7 @@
 
 .disappear-animation {
     animation-name: disappear;
-    animation-duration: 1.5s;
+    animation-duration: 1.25s;
     animation-delay: 0.25s;
     animation-fill-mode: forwards;
 }
@@ -37,4 +37,4 @@ button.display-div {
       display: none;
       opacity: 0;
     }
-  }
+}
