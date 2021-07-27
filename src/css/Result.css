@@ -1,0 +1,11 @@
+.result {
+    min-width: 500px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.result h1 {
+    text-align: center;
+    font-size: 39px;
+    color: purple;
+}
