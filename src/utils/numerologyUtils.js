@@ -10,8 +10,9 @@ export const getAttitudeNumber = (month, day) => {
     return getNumerologySingleNumber(result);
 }
 
-const getDayNumber = (day) => getNumerologySingleNumber(day);
 export const getDayNumberFull = (day) => day;
+
+const getDayNumber = (day) => getNumerologySingleNumber(day);
 
 const getMonthNumber = (month) => getNumerologySingleNumber(month);
 
@@ -19,7 +20,7 @@ const getYearNumber = (year) => getNumerologySingleNumber(year);
 
 // 1991 = 1 + 9 + 9 + 1 = 20
 // so have to add again 2 + 0 = 2
-const getNumerologySingleNumber = (num) => {
+export const getNumerologySingleNumber = (num) => {
     if (num <= 9) return num;
 
     let result = addStringNumbersInArray(getArrayFromItemToString(num));
@@ -33,7 +34,7 @@ const getNumerologySingleNumber = (num) => {
 
 const addStringNumbersInArray = (stringNumberArray) => {
     let result = 0;
-    result = stringNumberArray.map(x => result += parseInt(x));
+    stringNumberArray.map(x => result += parseInt(x));
 
     return result;
 }

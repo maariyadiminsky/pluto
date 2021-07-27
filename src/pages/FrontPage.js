@@ -5,6 +5,7 @@ import Year from "../components/Year";
 import "../css/Page.css";
 
 import { Months, MonthToNum, Days } from "../const/generalConst";
+import { getLifePathNumber, getAttitudeNumber, getDayNumberFull, getNumerologySingleNumber } from "../utils/numerologyUtils";
 
 // add steps to the top
 
@@ -66,6 +67,11 @@ class FrontPage extends Component {
                 shouldShowYearSelection: false
             });
         }, 1500);
+
+        console.log(`month: ${this.state.month}, day: ${this.state.day}, year: ${this.state.year}`);
+        console.log(`Results day: ${getDayNumberFull(this.state.day)}`);
+        console.log(`Results attitude: ${getAttitudeNumber(this.state.month, this.state.day)}`);
+        console.log(`Results life path: ${getLifePathNumber(this.state.month, this.state.day, this.state.year)}`);
     }
 
     renderItems = () => {

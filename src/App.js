@@ -8,8 +8,8 @@ const App = () => {
   return (
     <div className="app" style={{ backgroundImage: `url(${"/assets/images/space.jpg"})`}}>
       {/* <img src={"/assets/images/eclipse.jpg"} /> */}
-      {/* <FrontPage /> */}
-      <ResultsPage />
+      <FrontPage />
+      {/* <ResultsPage /> */}
     </div>
   );
 }
