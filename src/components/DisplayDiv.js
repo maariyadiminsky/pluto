@@ -2,22 +2,22 @@ import React from "react";
 
 import "../css/DisplayDiv.css";
 
-const renderMonths = (data, handleChoose) => (
+const renderDivs = (data, handleChoose, buttonSize) => (
     data.map(dataItem => (
         <div className="column display-div-container" key={dataItem}>
-            <button className="ui massive violet button floating message fluid display-div" onClick={() => handleChoose(dataItem)}>
+            <button className={`ui ${buttonSize} violet button floating message fluid display-div`} onClick={() => handleChoose(dataItem)}>
                 {dataItem}
             </button>
         </div>
     ))
 );
 
-const DisplayDiv = ({ data, handleChoose, shouldMonthSelectionHide, columnsAmount }) => {
+const DisplayDiv = ({ data, handleChoose, shouldMonthSelectionHide, columnsAmount, buttonSize, question }) => {
     return (
         <div className={`display-divs ${shouldMonthSelectionHide ? "disappear-animation" : ""}`}>
-            <h1>Which month were you born?</h1>
+            <h1>{question}</h1>
             <div className={`ui ${columnsAmount} column center aligned grid display-divs-items`}>
-                {renderMonths(data, handleChoose)}
+                {renderDivs(data, handleChoose, buttonSize)}
             </div>
         </div>
     )
