@@ -5,6 +5,27 @@ import { getLifePathNumber, getAttitudeNumber, getDayNumberFull, getNumerologySi
 import "../css/Page.css";
 
 class ResultsPage extends Component {
+    state = {
+        lifePathNumber: 0,
+        lifePathReport: "",
+
+        attitudeNumber: 0,
+        attitudeReport: "",
+
+        characterNumber: 0,
+        characterReport: ""
+    }
+
+    generateReport() {
+        const { month, day, year } = this.props;
+
+        
+    }
+
+    renderItems = () => {
+
+    }
+
     render() {
         return (
             <div className="page ui grid">
