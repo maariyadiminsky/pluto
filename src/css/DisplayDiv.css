@@ -1,4 +1,4 @@
-.months {
+.display-divs {
     max-width: 555px;
     margin: auto;
     padding-top: 10%;
@@ -11,20 +11,20 @@
     animation-fill-mode: forwards;
 }
 
-.months-items {
+.display-divs-items {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.4);
 
     border-radius: 10px;
 }
 
-.months h1 {
+.display-divs h1 {
     color: white;
     padding-bottom: 25px;
     text-align: center;
 }
 
-button.month {
+button.display-div {
     padding: 70px;
 }
 

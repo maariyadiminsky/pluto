@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Months from "../components/Months";
+import DisplayDiv from "../components/DisplayDiv";
 
 import "../css/FrontPage.css";
 
-import { MonthToNum } from "../const/generalConst";
+import { Months, MonthToNum } from "../const/generalConst";
 
 // add steps to the top
 
@@ -30,7 +30,12 @@ class FrontPage extends Component {
     render() {
         return (
             <div className="front-page">
-                <Months handleChooseMonth={this.handleChooseMonth} shouldMonthSelectionHide={this.state.shouldMonthSelectionHide}/>
+                <DisplayDiv 
+                    data={Months}
+                    handleChoose={this.handleChooseMonth} 
+                    shouldMonthSelectionHide={this.state.shouldMonthSelectionHide}
+                    columnsAmount={"four"}
+                />
                 {/* <form onSubmit={this.handleOnFormSubmit} >
 
                 </form> */}
