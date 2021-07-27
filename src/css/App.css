@@ -6,6 +6,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0px 0px 50px 100px black inset;
 }
 
 html, body, #root, .App {
