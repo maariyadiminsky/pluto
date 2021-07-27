@@ -5,16 +5,11 @@ import Year from "../components/Year";
 import "../css/Page.css";
 
 import { Months, MonthToNum, Days } from "../const/generalConst";
-import { getLifePathNumber, getAttitudeNumber, getDayNumberFull, getNumerologySingleNumber } from "../utils/numerologyUtils";
 
 // add steps to the top
 
 class FrontPage extends Component {
     state = {
-        month: 1,
-        day: 1,
-        year: 1991,
-
         shouldMonthSelectionHide: false,
         shouldDaySelectionHide: false,
         shouldYearSelectionHide: false,
@@ -29,8 +24,9 @@ class FrontPage extends Component {
     }
 
     handleChooseMonth = (month) => {
+        this.props.handleSetMonth(MonthToNum[month]);
+
         this.setState({ 
-            month: MonthToNum[month], 
             shouldMonthSelectionHide: true,
         });
 
@@ -43,8 +39,9 @@ class FrontPage extends Component {
     }
 
     handleChooseDay = (day) => {
+        this.props.handleSetDay(parseInt(day));
+
         this.setState({ 
-            day: parseInt(day), 
             shouldDaySelectionHide: true,
         });
 
@@ -57,8 +54,9 @@ class FrontPage extends Component {
     }
 
     handleChooseYear = (year) => {
+        this.props.handleSetYear(parseInt(year));
+
         this.setState({ 
-            year: parseInt(year), 
             shouldYearSelectionHide: true,
         });
 
@@ -66,12 +64,9 @@ class FrontPage extends Component {
             this.setState({ 
                 shouldShowYearSelection: false
             });
-        }, 1500);
 
-        console.log(`month: ${this.state.month}, day: ${this.state.day}, year: ${this.state.year}`);
-        console.log(`Results day: ${getDayNumberFull(this.state.day)}`);
-        console.log(`Results attitude: ${getAttitudeNumber(this.state.month, this.state.day)}`);
-        console.log(`Results life path: ${getLifePathNumber(this.state.month, this.state.day, this.state.year)}`);
+            this.props.showResults();
+        }, 1500);
     }
 
     renderItems = () => {
@@ -107,7 +102,7 @@ class FrontPage extends Component {
         }
     }
 
-    render() {
+    render() {  
         return (
             <div className="page">
                 {this.renderItems()}

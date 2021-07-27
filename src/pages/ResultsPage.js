@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Result from "../components/Result";
+import { getLifePathNumber, getAttitudeNumber, getDayNumberFull, getNumerologySingleNumber } from "../utils/numerologyUtils";
 
 import "../css/Page.css";
 
