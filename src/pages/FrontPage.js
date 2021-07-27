@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import DisplayDiv from "../components/DisplayDiv";
 import Year from "../components/Year";
 
-import "../css/FrontPage.css";
+import "../css/Page.css";
 
 import { Months, MonthToNum, Days } from "../const/generalConst";
 
@@ -103,7 +103,7 @@ class FrontPage extends Component {
 
     render() {
         return (
-            <div className="front-page">
+            <div className="page">
                 {this.renderItems()}
             </div>
         )
