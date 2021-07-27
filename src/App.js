@@ -29,17 +29,31 @@ class App extends Component {
     this.setState({ shouldShowResults: true })
   }
 
-  render() {
-    return (
-      <div className="app" style={{ backgroundImage: `url(${"/assets/images/space.jpg"})`}}>
-        {/* <img src={"/assets/images/eclipse.jpg"} /> */}
+  renderItems = () => {
+    if (this.state.shouldShowResults) {
+      return (
+        <ResultsPage 
+          month={this.state.month}
+          day={this.state.day}
+          year={this.state.year}
+        />
+      )
+    } else {
+      return (
         <FrontPage 
           handleSetMonth={this.handleSetMonth} 
           handleSetDay={this.handleSetDay}
           handleSetYear={this.handleSetYear}
           showResults={this.showResults}
         />
-        {/* <ResultsPage /> */}
+      )
+    }
+  }
+
+  render() {
+    return (
+      <div className="app" style={{ backgroundImage: `url(${"/assets/images/space.jpg"})`}}>
+        {this.renderItems()}
       </div>
     );
   }
