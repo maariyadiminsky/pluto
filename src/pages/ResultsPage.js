@@ -22,7 +22,6 @@ class ResultsPage extends PureComponent {
     componentDidMount = () => {
         const { month, day, year } = this.props;
 
-        // create report
         this.getNumerology(month, day, year);
     }
 
