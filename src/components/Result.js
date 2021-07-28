@@ -5,7 +5,7 @@ const Result = ({ number, header, sentence, report}) => {
     const renderLink = () => report && report.link ?  (
         <div className="extra content">
             <div className="center aligned author">
-                <a href={report.link} target="_blank">Learn more...</a>
+                <a href={report.link} target="_blank" rel="noreferrer">Learn more...</a>
             </div>
         </div>
     ) : "";

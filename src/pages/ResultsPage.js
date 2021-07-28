@@ -88,16 +88,16 @@ class ResultsPage extends PureComponent {
                         report={attitudeReport}
                     />
                     <Result
-                        number={characterNumber}
-                        header={Character.header}
-                        sentence={Character.sentence}
-                        report={characterReport}
-                    />
-                    <Result
                         number={lifePathNumber}
                         header={LifePath.header}
                         sentence={LifePath.sentence}
                         report={lifePathReport}
+                    />
+                    <Result
+                        number={characterNumber}
+                        header={Character.header}
+                        sentence={Character.sentence}
+                        report={characterReport}
                     />
                 </div>
             </div>

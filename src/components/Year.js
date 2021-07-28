@@ -24,7 +24,7 @@ class Year extends Component {
                             value = {this.state.year}
                             onChange={({ target: { value }}) => this.setState({ year: value })}
                         />
-                        <i class="search icon"></i>
+                        <i className="calendar alternate outline icon"></i>
                     </div>
                 </form>
             </div>
