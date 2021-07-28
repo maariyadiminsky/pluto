@@ -1,7 +1,11 @@
 .year {
     padding-top: 15%;
-    max-width: 500px;
+    max-width: 450px;
     margin: auto;
+}
+
+.year form {
+    max-width: 100px;
 }
 
 .year input {

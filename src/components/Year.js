@@ -16,13 +16,15 @@ class Year extends Component {
             <div className={`year ${this.props.shouldYearSelectionHide ? "disappear-animation" : ""}`}>
                 <h1> Ok, great! How about the year? </h1>
                 <form onSubmit={this.handleOnFormSubmit} className="ui massive form">
-                    <div className="field">
+                    <div className="ui huge icon input">
                         <input 
+                            className="ui input"
                             placeholder="1989" 
                             type="text" 
                             value = {this.state.year}
                             onChange={({ target: { value }}) => this.setState({ year: value })}
                         />
+                        <i class="search icon"></i>
                     </div>
                 </form>
             </div>
