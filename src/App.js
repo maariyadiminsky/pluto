@@ -8,7 +8,7 @@ class App extends Component {
   state = { 
     month: 1,
     day: 1,
-    year: 1991,
+    year: 1989,
 
     shouldShowResults: false
   }

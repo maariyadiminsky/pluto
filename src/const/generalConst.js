@@ -23,3 +23,27 @@ export const Days = [
     16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 
     29, 30, 31
 ];
+
+export const LifePath = {
+    header: "Life Path",
+    sentence: "life path",
+    path: "life-path"
+}
+
+export const Character = {
+    header: "Character Number",
+    sentence: "day/character",
+    path: "character"
+}
+
+export const Attitude = {
+    header: "Attitude Number",
+    sentence: "attitude",
+    path: "attitude"
+}
+
+export const DataType = {
+    LifePath: LifePath,
+    Character: Character,
+    Attitude: Attitude,
+}
