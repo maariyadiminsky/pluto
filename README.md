@@ -1,6 +1,6 @@
 # Pluto
 
-A simple app that displays a numerology report based on your birthday.
+A light-weight app that displays a numerology report based on your birthday.
 
 For the initial creation I focused on a more simple approach with minimal library use, practicing good folder structure and reusable components.
 
