@@ -6,6 +6,10 @@ For the initial creation I focused on a more simple approach with minimal librar
 
 Included is a [`numerology mock API`](https://github.com/maariyadiminsky/numerology-mock-api) I created since there was nothing available for free matching the api I was searching for.
 
+### See it live [here](https://pluto-liard.vercel.app/).
+
+Please note: When you get to the results page it's possible it may take several seconds to load due to the api being loaded on Heroku. Heroku dynos go to sleep after 30 minutes on inactivity.
+
 ----
 ### Future improvements:
 - Calendar and date libraries
