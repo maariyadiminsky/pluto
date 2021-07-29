@@ -8,7 +8,7 @@ Included is a [`numerology mock API`](https://github.com/maariyadiminsky/numerol
 
 ### See it live [here](https://pluto-liard.vercel.app/).
 
-Please note: When you get to the results page it's possible it may take several seconds to load due to the api being loaded on Heroku. Heroku dynos go to sleep after 30 minutes on inactivity.
+Please note: When you get to the results page it's possible it may take several seconds to load due to the api being loaded on Heroku. Heroku dynos go to sleep after 30 minutes of inactivity.
 
 ----
 ### Future improvements:
